@@ -3,11 +3,13 @@
 
 
 int main() {
-  int matrix[2][2][2];
+  int matrix[SLICES][ROWS][COLUMNS];
 
-  fill_tridimentional_matrix(2, 2, 2, matrix);
+  fill_tridimentional_matrix(SLICES, ROWS, COLUMNS, matrix);
 
-  print_tridimensional_matrix(2, 2, 2, matrix);
+  clear_screen();
+
+  print_tridimensional_matrix(SLICES, ROWS, COLUMNS, matrix);
 
   return 0;
 }
